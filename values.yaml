@@ -33,7 +33,7 @@ dagsterWebserver:
 
   ### This will override the name of our image used above.. Left it here
   ### In the event we want to do that. Also added an example
-  nameOverride: 'scythe-dagster-webserver'
+  nameOverride: 'dagster-webserver'
   service:
     type: ClusterIP
     port: 80
