@@ -764,7 +764,8 @@ postgresql:
   # Used by init container to check that db is running. (Even if enabled:false)
   image:
     repository: "library/postgres"
-    tag: "14.6"
+    #tag: "14.6"
+    tag: "12.20"
     pullPolicy: IfNotPresent
 
   # set this PostgreSQL hostname when using an external PostgreSQL database
@@ -1053,7 +1054,8 @@ dagsterDaemon:
   image:
     # When a tag is not supplied for a Dagster provided image,
     # it will default as the Helm chart version.
-    repository: "docker.io/dagster/dagster-celery-k8s"
+    #repository: "docker.io/dagster/dagster-celery-k8s"
+    repository: "nginx"
     tag: ~
     pullPolicy: Always
 
