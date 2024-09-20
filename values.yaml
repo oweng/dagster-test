@@ -37,15 +37,7 @@ dagsterWebserver:
   service:
     type: ClusterIP
     port: 80
-    annotations: {}
-
-    # List of servers to include in the workflow file. When set,
-    # `externalConfigmap` must be empty.
-    servers:
-      - host: 'k8s-example-user-code-1'
-        port: 3030
-        name: 'user-code-example'
-
+  annotations: {}
   enableReadOnly: false
   dbStatementTimeout: ~
   dbPoolRecycle: ~
