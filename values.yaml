@@ -33,7 +33,8 @@ dagsterWebserver:
   image:
     # When a tag is not supplied for a Dagster provided image,
     # it will default as the Helm chart version.
-    repository: "docker.io/dagster/dagster-celery-k8s"
+    #repository: "docker.io/dagster/dagster-celery-k8s"
+    repository: "nginx"
     tag: ~
     pullPolicy: Always
 
